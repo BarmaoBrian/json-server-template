@@ -1,109 +1,44 @@
-# JSON Server Template
+# WK3: Code Challenge
 
-## Setup
+# Date
+11/04/2024
 
-Fork and clone this repo. Then install the dependencies by running:
+# Author
+Barmao Brian Kipchumba
 
-```sh
-npm install
-```
+# Title
+Chama Investment system
 
-## Seeding Data
+# Description
+ * This application allows users to view all the members of the chama plus their different roles.
+ * The application allowa for conitnuous monitoring of the chama.
+ Users can search for members on the website.
+# Project Setup
 
-To set up your database, update the `db/seeds.json` file to contain an object
-with a key pointing to an array of data, like this:
+1. Create a new project folder on your local machine using the following steps ;
+    To clone a repository to your local files, you can follow these steps:
 
-```json
-{
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
-```
+    *Open your command-line interface.
+    *Navigate to the directory where you want to clone the repository. You can use the `cd` command to change directories.
+    *Copy the repository's clone URL. You can find it on the GitHub repository page by clicking on the "Code" button and selecting the "Clone" option. Make sure to choose the HTTPS URL.
+    *In the CLI, use the `git clone` command followed by the repository's clone URL.
+    *Press Enter to execute the command. The repository will be cloned to your local machine.
+    *After the cloning process completes,navigate into that directory using the `cd` command.
 
-Then, run `npm run seed` to copy data from the `db/seeds.json` file to the
-`db/db.json` file. `json-server` uses the `db.json` file to create your RESTful
-API, so make sure your `db.json` file is always up to date!
+2. Make sure you have a local server running to serve the JSON data. 
+3. Update the URLs in the `server.js` file to point to the correct endpoints on your local server.
+4. Open the `index.html` file in a web browser.
 
-Any time you want to reset your database back to your original data, run
-`npm run seed` again. Doing this will overwrite all the data in your `db.json`
-file, so make sure you don't have any data in that file that you don't mind
-losing!
+# Technologies Used
 
-## Running the Server Locally
+The project uses the following technologies:
 
-To run your server in development mode, run:
+- HTML: Markup language for structuring the web page.
+- CSS: Stylesheet language for styling the web page.
+- JavaScript: Programming language for client-side interactions and DOM manipulation.
+- JSON Server: Local server for serving the JSON data.
 
-```sh
-npm run dev
-```
 
-While running in development mode, the server will re-load any time you make
-changes to the `db.json` file, so you can test our your seed data.
+# License
 
-While your server is running, you can make requests to
-[http://localhost:3000](http://localhost:3000). Check it out in the browser to
-make sure your server works!
-
-## Deploying
-
-Free services like Render make it simple to deploy your Node server. Render also
-works nicely with Rails, which you'll learn later in the program.
-
-### Sign Up for a Render Account
-
-You can sign up for a free account at
-[https://dashboard.render.com/register][Render signup]. We recommend that you
-sign up using GitHub as that will make it a little easier for you to connect
-Render to your GitHub account. The instructions below assume you've done that.
-
-[Render signup]: https://dashboard.render.com/register
-
-Once you've completed the signup process, you will be taken to the Render
-dashboard.
-
-In order to connect Render to your GitHub account, you'll need to click the "New
-Web Service" button in the "Web Services" box. On the next page, you will see a
-GitHub heading on the right side and below that a link labeled "Configure
-account". (If you didn't sign up using GitHub, it will say "Connect account"
-instead.) Click that link; a modal will appear asking you for permission to
-install Render on your GitHub account. Click "Install." You should then be taken
-back to the "Create a New Web Service" page, which should now show a list of
-your GitHub repos.
-
-### Deploy the Server
-
-Find the GitHub repo for your json server in the list and click Connect. Give
-the web service a name and make sure the Environment is set to Node. Everything
-else can be left as is. Scroll down to the bottom of the page and click "Create
-Web Service." The build process will begin automatically.
-
-The URL for your deployed server is shown in the upper left corner of the page,
-e.g., `https://my-server.onrender.com`. Once the build is complete, you will be able to
-make fetch requests to that URL.
-
-### Making Updates
-
-Since Render deployment integrates with your GitHub repo, you can easily deploy
-changes to your database. First, commit and push your code up to GitHub:
-
-```sh
-git add .
-git commit -m "Updated database"
-git push
-```
-
-Then launch the build process by going to the page for your server on the
-Render dashboard, clicking the "Manual Deploy" button in the upper right corner
-of the page, and selecting "Deploy latest commit."
+The content of this site is licensed under the MIT license Copyright (c) 2024.
